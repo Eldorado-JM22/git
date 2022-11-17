@@ -3,4 +3,90 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#hero .hero h1 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #181818;
+}
+#hero .hero span {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 560;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #EDD713;
+}
+#hero .hero--group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .hero--group--first--one {
+  width: 70%;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero .hero--group--first--one img {
+  position: relative;
+  bottom: 50px;
+}
+#hero .hero--group--first--one ul {
+  font-family: "Golos", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #393939;
+  position: absolute;
+}
+#hero .hero--group--first--one p {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #393939;
+}
+#hero .hero--group--first button {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #181818;
+  cursor: pointer;
+  background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+  padding: 15px 20px;
+  border: none;
+  transition: 0.6s;
+  margin: 15px 0;
+}
+#hero .hero--group--first button:hover {
+  background: transparent;
+  color: black;
+  transform: scale(1.12);
+}
+
 /*# sourceMappingURL=style.css.map */
