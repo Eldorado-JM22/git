@@ -3,7 +3,18 @@
   justify-content: space-between;
   align-items: center;
 }
+@mixin df2{
+  display: flex;
+  align-items: center;
 
+}
+
+@mixin df3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 //+----TEXT---+//
 @mixin text {
   font-family: 'Futura PT', sans-serif;
@@ -41,11 +52,56 @@
 
 @mixin para {
   font-family: 'Gilroy', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #393939;
+}
+
+@mixin para2 {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #181818;
+}
+
+@mixin swiper {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@mixin swiper2 {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 143%;
+  text-transform: uppercase;
+  padding: 1px 0;
+}
+
+@mixin test {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+@mixin black{
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #181818;
+
 }
 
 //+----TEXT---+//
@@ -74,3 +130,12 @@
 }
 
 //+-----BTN-------+//
+
+//+------------BLOCK--------+
+@mixin block{
+  width: 96%;
+  background: #000000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  //border: 2px solid gray;
+
+}
