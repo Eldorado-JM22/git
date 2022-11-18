@@ -1,4 +1,5 @@
 @mixin space {
+@mixin df {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,4 +19,140 @@
   font-family: 'Gilroy',sans-serif;
   font-weight: 440;
   font-size: 12px;
+}
+@mixin df2{
+  display: flex;
+  align-items: center;
+
+}
+
+@mixin df3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+//+----TEXT---+//
+@mixin text {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #181818;
+
+}
+
+@mixin span {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 560;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #EDD713;
+}
+
+@mixin text-one {
+  font-family: 'Golos', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #393939;
+  position: absolute;
+
+}
+
+@mixin para {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #393939;
+}
+
+@mixin para2 {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #181818;
+}
+
+@mixin swiper {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@mixin swiper2 {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 143%;
+  text-transform: uppercase;
+  padding: 1px 0;
+}
+
+@mixin test {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+@mixin black{
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #181818;
+
+}
+
+//+----TEXT---+//
+
+//+-----BTN-------+//
+
+@mixin button {
+  font-family: 'Futura PT', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #181818;
+  cursor: pointer;
+  background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+  padding: 15px 20px;
+  border: none;
+  transition: .6s;
+  &:hover {
+    background: transparent;
+    color: black;
+    transform: scale(1.12);
+  }
+}
+
+//+-----BTN-------+//
+
+//+------------BLOCK--------+
+@mixin block{
+  width: 96%;
+  background: #000000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  //border: 2px solid gray;
+
 }
