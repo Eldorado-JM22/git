@@ -1,7 +1,24 @@
+@mixin space {
 @mixin df {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@mixin start {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: start;
+}
+@mixin center {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+}
+@mixin paragraph {
+  font-family: 'Gilroy',sans-serif;
+  font-weight: 440;
+  font-size: 12px;
 }
 @mixin df2{
   display: flex;
