@@ -6,15 +6,104 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<header id="header">
+    <div class="container">
+        <div class="header">
+
+            <div class="header--logo">
+
+                <div class="header--logo__image">
+                    <img src="./img/image%201.png" alt="img">
+                </div>
+
+                <div class="header--logo__advertising">
+                    <a href="#" class="">Ремонт квартир и домов</a>
+                    <a href="#" class="header--logo__advertising--two"><ion-icon name="location-outline"></ion-icon> Работаем в Москве  и МО</a>
+                </div>
+
+                <div class="header--logo__advertisingtwo">
+                    <img src="./img/svj1.svg" alt="img">
+                    <a href="#">Вызвать мастера <br> на замер</a>
+                </div>
+
+                <div class="header--logo__advertisingthree">
+                    <a href="#">Подписывайтесь</a>
+
+                    <div class="header--logo__advertisingthree--icons">
+                        <div class="header--logo__advertisingthree--icons__in">
+                            <ion-icon name="navigate"></ion-icon>
+                        </div>
+
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="header--logo__advertisingend">
+                    <a href="#">Онлайн, отвечаем быстро</a>
+                    <div class="header--logo__advertisingend--icon">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+
+
+
+                    </div>
+                </div>
+
+                <div class="header--logo__contact">
+                    <a href="#" class="header--logo__contact__one"><ion-icon name="ellipse"></ion-icon> На связи с 10:00 до 20:00 без выходных</a>
+                    <p class="header--logo__contact--midl">+ 7 ( 495 ) 032- 66-56</p>
+                     <a href="#" class="header--logo__contact__one">Заказать обратный звонок</a>
+                </div>
+
+            </div>
+
+            <div class="header--nav">
+                <div class="header--nav__menu">
+                    <img src="./img/burger.svg" alt="img">
+                </div>
+                <a href="#">Меню</a>
+                <a href="#">Рассчитать стоимость</a>
+                <a href="#">5 важных этапов</a>
+                <a href="#">Гарантии</a>
+                <a href="#">Мастера</a>
+                <a href="#">Выбрать ремонт</a>
+                <a href="#">Рассрочка</a>
+                <a href="#">Карта объектов</a>
+
+            </div>
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Рассчитать стоимость</a></li>
+                    <li><a class="menu__item" href="#">5 важных этапов</a></li>
+                    <li><a class="menu__item" href="#">Гарантии</a></li>
+                    <li><a class="menu__item" href="#">Мастера</a></li>
+                    <li><a class="menu__item" href="#">Выбрать ремонт</a></li>
+                    <li><a class="menu__item" href="#">Рассрочка</a></li>
+                    <li><a class="menu__item" href="#">Карта объектов</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
 
 <section id="hero">
     <div class="container">
         <div class="hero">
-            <h1>Давайте знакомиться: <br>
-                МЫ - <span>строительная  компания INSIDE</span>
+                МЫ - <span>строительная компания INSIDE</span>
             </h1>
 
             <div class="hero--group">
@@ -39,6 +128,7 @@
 
 
                     <div class="hero--group--second--two">
+
                         <img src="./img/logo.svg" alt="img">
 
                         <ul>Руслан Исаев</ul>
@@ -54,6 +144,7 @@
 
 
                     <div class="hero--group--third--three">
+           
                         <img src="./img/logo.svg" alt="img">
 
                         <ul>Екатерина Светлова</ul>
@@ -67,5 +158,10 @@
     </div>
 </section>
 
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

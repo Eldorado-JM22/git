@@ -3,6 +3,247 @@
 @import "verebles";
 @import "media";
 
+#header {
+  padding: 30px 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: rgba(17, 16, 16, 0.17);
+  backdrop-filter: blur(15px);
+
+  .header {
+
+    &--logo {
+      padding-bottom: 30px;
+      @include start();
+
+      &__image {
+        img {
+          margin-top: -10px;
+        }
+
+      }
+
+      &__advertising {
+        a {
+          padding-bottom: 3px;
+          @include paragraph();
+          color: $wt;
+          transition: .3s;
+
+          &:hover {
+            text-decoration-line: underline;
+            color: $yl;
+          }
+        }
+
+        &--two {
+          @include center();
+          font-family: 'Gilroy', sans-serif;
+          font-weight: 300;
+          font-size: 14px;
+          color: $wt;
+
+          ion-icon {
+            color: $yl;
+            font-size: $fz;
+            transition: .3s;
+
+            &:hover {
+              color: $yl;
+            }
+
+          }
+        }
+      }
+
+      &__advertisingtwo {
+        @include center();
+
+        img {
+          background: #735b5b;
+          border-radius: 50%;
+        }
+
+        a {
+          padding-left: 8px;
+          font-weight: 400;
+          font-size: 16px;
+          text-decoration-line: underline;
+          color: $wt;
+          transition: .3s;
+
+          &:hover {
+            color: $yl;
+          }
+        }
+
+      }
+
+      &__advertisingthree {
+        a {
+          @include paragraph();
+          color: $wt;
+
+          &:hover {
+            text-decoration-line: underline;
+            color: $yl;
+          }
+
+        }
+
+        &--icons {
+          padding-top: 8px;
+          display: flex;
+
+          ion-icon {
+            margin-left: 10px;
+            padding: 9px 9px;
+            border-radius: 50%;
+            color: #f09433;
+            background: $wt;
+            transition: .4s;
+
+            &:hover {
+              background: $yl;
+            }
+          }
+
+          &__in {
+            ion-icon {
+              padding: 9px 9px;
+              border-radius: 50%;
+              background: $wt;
+              color: #63AAF1;;
+            }
+          }
+        }
+
+      }
+
+      &__advertisingend {
+        a {
+          padding-bottom: 8px;
+          font-weight: 400;
+          font-size: 12px;
+          color: $wt;
+
+          &:hover {
+            text-decoration-line: underline;
+            color: $yl;
+          }
+        }
+
+        &--icon {
+          display: flex;
+          padding-top: 8px;
+          ion-icon {
+            margin:  0 10px;
+            padding: 9px 9px;
+            border-radius: 50%;
+            color: #48C95F;
+            background: $wt;
+            transition: .4s;
+
+            &:hover {
+              background: $yl;
+            }
+          }
+        }
+
+        button {
+          background: none;
+          border: none;
+
+
+          ion-icon {
+            background: $wt;
+            padding: 9px 9px;
+            border-radius: 50%;
+            color: #48C95F;
+            rotate: 180deg;
+            transition: .4s;
+
+            &:hover {
+              transform: rotate(180deg);
+            }
+
+          }
+        }
+
+
+      }
+
+      &__contact {
+        &__one {
+          @include center();
+          @include paragraph();
+          color: $wt;
+          &:hover {
+            color: $yl;
+            text-decoration-line: underline;
+          }
+
+          ion-icon {
+            color: $yl;
+            padding: 0 3px;
+          }
+        }
+
+        &--midl {
+          font-weight: 600;
+          font-size: 23px;
+          color: $wt;
+        }
+      }
+
+    }
+
+    &--nav {
+      width: 100%;
+      @include space();
+      padding: 9px 10px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(5px);
+
+      &__menu {
+        @include center();
+        background: #F5E934;
+        width: 4%;
+        height: 26px;
+
+        img {
+          margin-left: 5px;
+        }
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+        }
+      }
+
+      a {
+        font-weight: 300;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        color: $wt;
+        transition: .2s;
+
+        &:hover {
+          color: $yl;
+          text-decoration-line: underline;
+
+
+        }
+      }
+
+@import "mixin";
+@import "global";
+@import "verebles";
+
 #hero {
   .hero {
     h1 {
@@ -117,6 +358,102 @@
         button {
           @include button;
           margin: 15px 0;
+    }
+
+  }
+}
+
+#swiper-group {
+  .swiper-group {
+    background: url("../img/bg.png") no-repeat center/cover;
+    min-height: 90vh;
+    margin: 20px 0;
+
+    h2 {
+      @include text;
+      color: #FFFFFF;
+      padding: 40px 0;
+    }
+
+    span {
+      @include span;
+    }
+
+    img {
+      width: 30px;
+    }
+
+    &--swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      object-fit: cover;
+    }
+
+  }
+}
+
+#pro {
+  .pro {
+    h4 {
+      @include text;
+    }
+
+    span {
+      @include span;
+    }
+
+    &--blocks {
+      @include df3;
+
+      &--first {
+        @include df2;
+
+        &--one {
+          img {
+
+          }
+
+          &__bloc {
+            @include block;
+            @include black;
+
+
+            h2 {
+              @include para2;
+            }
+
+            span {
+              @include swiper2;
+            }
+
+            p {
+              @include black;
+            }
+          }
         }
       }
     }
