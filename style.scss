@@ -1,6 +1,7 @@
 @import "mixin";
 @import "global";
 @import "verebles";
+@import "media";
 
 #hero {
   .hero {
@@ -50,7 +51,74 @@
 
 
       }
-    }
 
+      &--second {
+
+        &--two {
+          width: 70%;
+          background: #FFFFFF;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          padding: 30px 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+
+
+          img {
+            position: relative;
+            bottom: 50px;
+          }
+
+          ul {
+            @include text-one;
+          }
+
+          p {
+            @include para;
+          }
+
+        }
+
+        button {
+          @include button;
+          margin: 15px 0;
+        }
+
+
+      }
+
+      &--third {
+
+        &--three {
+          width: 70%;
+          background: #FFFFFF;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          padding: 30px 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            position: relative;
+            bottom: 50px;
+          }
+
+          ul {
+            @include text-one;
+          }
+
+          p {
+            @include para;
+          }
+
+        }
+
+        button {
+          @include button;
+          margin: 15px 0;
+        }
+      }
+    }
   }
 }
